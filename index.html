@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/media.css">
+</head>
+<body>
+<section class="hero">
+    <img class="hero__logo" src="./assets/src/konstruct-logo.svg" alt="logo">
+
+   <div class="text">
+    <h1 class="hero__title">PARTNER WITH KONSTUCT</h1>
+    <p class="hero__subtitle">An award-winning construction management firm</p>
+   </div>
+
+    <p class="hero__scroll">scroll down</p>
+</section>
+
+<header class="header" id="header">
+    <div class="container">
+        <a href="#" class="header__logo"><img src="./assets/src/logo-black.svg" alt=""></a>
+        <nav class="header__menu">
+            <ul class="header__list">
+                <li class="header__link"><a href="#">home</a></li>
+                <li class="header__link"><a href="#">about</a></li>
+                <li class="header__link"><a href="#">services</a></li>
+                <li class="header__link"><a href="#">work</a></li>
+                <li class="header__link"><a href="#">contact</a></li>
+            </ul>
+        </nav>
+        <nav class="burger">
+            <input type="checkbox" id="burger" hidden>
+            <label for="burger" class="burger__btn">
+                <span class="burger__line"></span>
+            </label>
+            <div class="burger__menu">
+                <label for="burger" class="burger__exit"></label>
+                <li class="burger__link"><a href="#">home</a></li>
+                <li class="burger__link"><a href="#">about</a></li>
+                <li class="burger__link"><a href="#">servises</a></li>
+                <li class="burger__link"><a href="#">work</a></li>
+                <li class="burger__link"><a href="#">contact</a></li>   
+            </div>
+        </nav>
+
+    </div>
+</header>
+
+<section class="about" id="about">
+    <div class="container">
+        <h2 class="about__title">Our story</h2>
+        <div class="d-flex">
+            <div class="about__left">
+                <p class="about__lg-desc">Founded in 2011 by John Mathew Smith, <a href="#" class="about__link">Konstruct</a> has become the number one construction management firm</p>
+                <p class="about__sm-desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+                magna aliquam erat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat.</p>
+            </div>
+            <div class="about__right">
+                <div class="about_card">
+                    <h4 class="about__md__title">WE PLAN</h4>
+                </div>
+                <div class="about_card">
+                    <h4 class="about__md__title">WE MANAGE</h4>
+                </div>
+                <div class="about_card">
+                    <h4 class="about__md__title">WE BUILD
+                    </h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="servises" id="servises">
+    <div class="container">
+        <div class="servises__top">
+            <h2 class="servises__title">OUR CAPABILITIES</h2>
+            <div class="servises__right">
+                <p class="servises__desc">Lorem ipsum dolor sit amet, consectetuer 
+                    adipiscing elit, sed diam nonummy nibh euismod tincidunt ut 
+                    laoreet dolore magna aliquam erat.</p>
+                <button class="section__btn">ALL SERVICES</button>
+            </div>
+        </div>
+        <div class="servises__bottom">
+            <div class="card">
+                <img src="./assets/src/services1.png" alt="">
+                <h3 class="card__title">PROJECT AND CONSTRUCTION MANAGEMENT</h3>
+                <p class="card__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/src/services2.png" alt="">
+                <h3 class="card__title">STRUCTURE AUDIT AND MAINTENANCE</h3>
+                <p class="card__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+            <div class="card">
+                <img src="./assets/src/services3.png" alt="">
+                <h3 class="card__title">FACTORY CONSTRUCTION AND MODELING</h3>
+                <p class="card__desc">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, 
+                sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat.</p>
+            </div>
+        </div>
+    </div>
+</section> 
+
+<section class="get-in-touch">
+    <h2 class="get-in-touch__title">Want to build something amazing?</h2>
+    <button class="section__btn">GET IN TOUCH</button>
+</section>
+
+<script>
+    const btn = document.querySelectorAll(".burger__link")
+    btn.forEach(el => {
+        el.addEventListener("click", () => {
+            document.querySelector("#burger").checked = false
+        })
+    })
+</script>
+</body>
+</html>
